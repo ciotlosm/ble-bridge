@@ -1,9 +1,3 @@
-# Copy this file to /etc/systemd/system/EspruinoHub.service and then
-#     sudo systemctl start EspruinoHub.service
-# and to start on boot:
-#     sudo systemctl enable EspruinoHub.service
-# To consult the log : sudo journalctl -u EspruinoHub
-
 [Unit]
 Description=BLE to MQTT
 After=nodered.target
@@ -21,4 +15,3 @@ KillSignal=SIGINT
 
 [Install]
 WantedBy=multi-user.target
-
