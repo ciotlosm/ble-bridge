@@ -1,0 +1,17 @@
+{
+    "mqtt": {
+        "host": "mqtt://127.0.0.1",
+        "options": {
+            "username": "user",
+            "password": "pass"
+        }
+    },
+    "services": {
+        "temperature": {
+            "id": "e95d6100251d470aa062fa1922dfa9a8",
+            "characteristics": {
+                "temperature": "e95d9250251d470aa062fa1922dfa9a8"
+            }
+        }
+    }
+}

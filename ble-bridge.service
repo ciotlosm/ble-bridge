@@ -1,0 +1,24 @@
+# Copy this file to /etc/systemd/system/EspruinoHub.service and then
+#     sudo systemctl start EspruinoHub.service
+# and to start on boot:
+#     sudo systemctl enable EspruinoHub.service
+# To consult the log : sudo journalctl -u EspruinoHub
+
+[Unit]
+Description=BLE to MQTT
+After=nodered.target
+
+[Service]
+ExecStart=/home/pi/ble-bridge/index.js
+WorkingDirectory=/home/pi/ble-bridge
+User=pi
+Group=daemon
+Nice=10
+SyslogIdentifier=ble-bridge
+StandardOutput=syslog
+Restart=on-failure
+KillSignal=SIGINT
+
+[Install]
+WantedBy=multi-user.target
+
