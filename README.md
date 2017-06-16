@@ -9,6 +9,12 @@ cd ble-bridge
 npm install
 ```
 
+Install some pre-required packages
+```
+sudo apt-get update
+sudo apt-get install -y libusb-dev libdbus-1-dev libglib2.0-dev libudev-dev libical-dev libreadline-dev
+```
+
 Update your configuration by using the example
 ```
 cp ble-bridge.json.example ble-bridge.json
