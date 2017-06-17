@@ -3,7 +3,7 @@ Description=BLE to MQTT
 After=nodered.target
 
 [Service]
-ExecStart=/home/pi/ble-bridge/index.js
+ExecStart=/home/pi/ble-bridge/start.sh
 WorkingDirectory=/home/pi/ble-bridge
 User=pi
 Group=daemon
